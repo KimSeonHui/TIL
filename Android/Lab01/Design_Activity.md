@@ -24,6 +24,7 @@ public class Lab01MainActivity extends AppCompatActivity {
     }
 }
 ```
+<img src = "./Lab01_DesignWithJava.png" width = "300px" height ="400px">
 
 - ## XML로 화면 설계하기
    + res의 layout 폴더 안에 있는 xml 파일에서 작업
@@ -48,3 +49,4 @@ public class Lab01MainActivity extends AppCompatActivity {
         
 </LinearLayout>
 ```
+<img src = "./Lab01_DesignWithXml.png" width = "300px" height ="400px">
