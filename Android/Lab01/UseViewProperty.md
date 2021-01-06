@@ -65,3 +65,9 @@ public class Lab01_3Activity extends AppCompatActivity implements View.OnClickLi
     }
 }
 ```
+**visible_false 클릭**      
+<img src="./Lab01_INVISIBLE.png" width="300px" height="400px">
+      
+**visible_true 클릭**       
+<img src ="./Lab01_VISIBLE.png" width="300px" height="400px">      
+      
