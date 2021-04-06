@@ -14,7 +14,7 @@ OS 다운로드와 SD 카드 설치를 한 번에 진행할 수 있게 해줌
 
 처음 사용하는 SD 카드라도 포맷을 진행하고 설치를 시작해야 하는데 이 기능을 파이 이미저에서 담당함
 
-- 파이 이미저 [설치 주소](https://www.raspberrypi.org/software/)
+- [파이 이미저 다운로드](https://www.raspberrypi.org/software/)
 
 - 각 운영체제에 맞는 버전으로 imager 다운
 
