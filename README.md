@@ -18,4 +18,4 @@ Today I Learned
 ----
 ## Raspberry Pi
 - [라즈베리파이 OS 설치](./RaspberryPi/OsInstall.md)
-- [라즈베리파이 프로젝트_SmartLight](.RaspberryPi/SmartLight/README.md)
+- [라즈베리파이 프로젝트_SmartLight](.RaspberryPi/SmartLightProject/README.md)
