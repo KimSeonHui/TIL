@@ -8,6 +8,7 @@ Today I Learned
 - [Find Kim_String 비교](./Algorithms/01_FindKim.md)
 - [Harsh Number](./Algorithms/02_HasharNum.md)
 - [mock Test_완전탐색](./Algorithms/03_mockTest.md)
+- [Kth Number_정렬](./Algorithms/04_KthNumber_Sort.md)
 
 
 -----
