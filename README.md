@@ -10,6 +10,7 @@ Today I Learned
 - [mock Test_완전탐색](./Algorithms/03_mockTest.md)
 - [Kth Number_정렬](./Algorithms/04_KthNumber_Sort.md)
 - [Budget](./Algorithms/05_Budget.md)
+- [2016](./Algorithms/06_2016.md)
 
 
 -----
