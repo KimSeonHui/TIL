@@ -21,6 +21,7 @@ Today I Learned
 
 -----
 ## Data Structure
+- [배열](./DatauStructure/Array.md)
 - [다차원 배열](./DataStructure/Multi_DimensionalArray.md)
 ----
 ## Raspberry Pi
