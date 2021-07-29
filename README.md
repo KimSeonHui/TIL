@@ -11,6 +11,7 @@ Today I Learned
 - [Kth Number_정렬](./Algorithms/04_KthNumber_Sort.md)
 - [Budget](./Algorithms/05_Budget.md)
 - [2016](./Algorithms/06_2016.md)
+- [같은 숫자는 싫어](./Algorithms/07_OnlyDifferentNumber.md)
 
 
 -----
