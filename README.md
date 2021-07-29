@@ -24,6 +24,8 @@ Today I Learned
 - [배열](./DataStructure/Array.md)
 - [다차원 배열](./DataStructure/Multi_DimensionalArray.md)
 - [ArrayList](./DataStructure/ArrayList.md)
+- [HashMap](./DataStructure/HashMap.md)
+
 ----
 ## Raspberry Pi
 - [라즈베리파이 OS 설치](./RaspberryPi/OsInstall.md)
