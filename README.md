@@ -1,5 +1,6 @@
 # 📝TIL
-Today I Learned
+**Today I Learned**      
+오늘 공부한 것들, 이해하고 알게된 것들 정리하기
 
 -----
 
@@ -25,6 +26,11 @@ Today I Learned
 
 
 -----
+## BackToBasic
+- [Character](./BackToBasic/Character.md)
+
+----
+
 ## Data Structure
 - [배열](./DataStructure/Array.md)
 - [다차원 배열](./DataStructure/Multi_DimensionalArray.md)
