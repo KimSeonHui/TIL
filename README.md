@@ -14,6 +14,7 @@ Today I Learned
 - [같은 숫자는 싫어](./Algorithms/07_OnlyDifferentNumber.md)
 - [나누어 떨어지는 숫자 배열](./Algorithms/08_DividedNumber.md)
 - [두 정수 사이의 합](./Algorithms/09_SumAToB.md)
+- [문자열 문제](./Algorithms/10_StringTest.md)
 
 
 
