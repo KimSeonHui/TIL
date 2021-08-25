@@ -16,7 +16,7 @@
 - [나누어 떨어지는 숫자 배열](./Algorithms/08_DividedNumber.md)
 - [두 정수 사이의 합](./Algorithms/09_SumAToB.md)
 - [문자열 문제](./Algorithms/10_StringTest.md)
-
+- [소수 찾기](./Algorithms/11_PrimeNumber.md)
 
 
 -----
