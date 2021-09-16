@@ -50,6 +50,10 @@
 - [정보의 양을 나타내는 단위](./Network/02_BitByte.md)
 - [LAN과 WAN](./Network/03_LANWAN.md)
 
+#
+**Error Solve**        
+-[SSH 통신 설정 & Permission denined Error](./Network/SSHErrorSolve.md)
+
 ----
 ## OS
 - [Linux_01](./OS/Linux.md)
