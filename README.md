@@ -50,6 +50,7 @@
 - [정보의 양을 나타내는 단위](./Network/02_BitByte.md)
 - [LAN과 WAN](./Network/03_LANWAN.md)
 - [가정과 회사에서의 랜 구성](./Network/04_LANConfiguration.md)
+- [OSI모델과 TCP/IP 모델](./Network/05_OSIAndTCPIP.md)
 
 #
 **Error Solve**        
