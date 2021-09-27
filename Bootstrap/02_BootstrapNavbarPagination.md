@@ -50,3 +50,10 @@ navbar-expand-xl, navbar-expand-lg, navbar-expand-md, navbar-expand-sm
 
 ### 상단바 안에서의 위치배치
 `Utilities_Spacing(margine, padding`)과 `Utilities_flex(자동 마진, 정렬, 순서...)` class를 사용해서 배치
+
+-----
+## Pagination
+페이지 넘길 수 있는 바
+
+![Untitled](https://user-images.githubusercontent.com/44824456/134842894-69771290-5dc9-4e08-8369-bc169c111d8e.png)
+
