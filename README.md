@@ -39,7 +39,7 @@
 - [Summernote in Bootstrap](./Bootstrap/04_Summernote.md)
 - [carousel](./Bootstrap/05_carousel.md)
 - [Modal](./Bootstrap/06_Modal.md)
-- [Tootips & Popovers](./Bootstrap/07_Tootips & Popovers.md)
+- [Tootips & Popovers](./Bootstrap/07_Tootips_Popovers.md)
 
 ----
 ## Database
@@ -80,8 +80,8 @@
 
 ----
 ## React
-- [React란? & 개발 환경 설정](./React/01_AboutReact & Setting.md)
-- [React 디렉토리](./React/02_React Directory.md)
+- [React & 개발 환경 설정](./React/01_AboutReact_Setting.md)
+- [React 디렉토리](./React/02_React_Directory.md)
 - [Component](./React/03_Component.md)
 
 
