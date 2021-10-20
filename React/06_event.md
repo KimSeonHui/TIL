@@ -62,7 +62,7 @@ react에서는 `onClick={function() { ...}` 으로 이벤트 사용
 
 `this.state.mode = 'welcome';` 의 `this` 는 APP 컴포넌트의 `this` 가 됨
 
-#
+
 
 2. `this.setState({ stateName : value })`
 
@@ -79,3 +79,32 @@ react에서는 `onClick={function() { ...}` 으로 이벤트 사용
 ```
 
 state 값을 변경하기 위해서는 `setState()` 사용
+
+
+#
+
+### bind(), setState()
+
+**`bind()`**
+bind : 엮는다, 묶어준다
+
+render() 함수 안에서 `this` 는 render()가 속해 있는 컴포넌트 자체를 가리킴
+
+onClick() 함수 안에서 `this` 는 없음
+
+`함수.bind(연결하고자 하는 객체);`
+
+- 함수 안에서 사용하고 있는 `this` 객체에 bind()의 인자로 넣어준 객체를 주입
+- 이렇게 동작하는 새로운 함수가 복제됨
+
+#
+
+**`setState()`**
+
+`this.state.mode = "welcome";` 을 사용할 때
+
+- 값이 바뀌지만 리액트 입장에서는 값이 바뀐지 모름
+- 리액트에 알려주는 역할까지 하려면 `setState()` 을 통해서 state의 값을 바꿔야함
+
+ 
+>constructor에서 state를 생성할 때는 `setState()` 없이 직접 바꿔도 가능
