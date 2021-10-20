@@ -84,6 +84,8 @@
 - [React 디렉토리](./React/02_React_Directory.md)
 - [Component](./React/03_Component.md)
 - [Props & State](./React/04_Props_State.md)
+- [State](./React/05_state.md)
+- [Event](./React/06_event.md)
 
 ----
 
