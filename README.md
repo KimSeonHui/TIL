@@ -63,6 +63,7 @@
 - [가정과 회사에서의 랜 구성](./Network/04_LANConfiguration.md)
 - [OSI모델과 TCP/IP 모델](./Network/05_OSIAndTCPIP.md)
 - [캡슐화와 역캡슐화](./Network/06_encapsulation_decapslation.md)
+- [물리 계층 : 데이터를 전기 신호로 변환하기](./Network/07_physicalLayer.md)
 
 #
 **Error Solve**        
