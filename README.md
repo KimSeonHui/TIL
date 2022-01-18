@@ -62,6 +62,7 @@
 - [LAN과 WAN](./Network/03_LANWAN.md)
 - [가정과 회사에서의 랜 구성](./Network/04_LANConfiguration.md)
 - [OSI모델과 TCP/IP 모델](./Network/05_OSIAndTCPIP.md)
+- [캡슐화와 역캡슐화](./Network/06_encapsulation_decapslation.md)
 
 #
 **Error Solve**        
