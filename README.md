@@ -18,6 +18,7 @@
 - [문자열 문제](./Algorithms/10_StringTest.md)
 - [소수 찾기](./Algorithms/11_PrimeNumber.md)
 - [수박수박수](./Algorithms/12_subak.md)
+- [가운데 글자 가져오기](./Algorithms/13_middleword.md)
 
 
 -----
