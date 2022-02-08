@@ -17,7 +17,7 @@
 - for문이 종료되면 answer의 값을 return
 
 ---
-### 📍코드
+### 📍코드(java)
 ``` java
 import java.util.Arrays;
 
@@ -39,3 +39,21 @@ class Solution {
 }
 ```
 ---
+
+### 📍코드(javascript)
+```javascript
+function solution(d, budget) {
+    let answer = 0;
+    d.sort(function(a, b) {
+        return a - b;
+    });
+
+    for(let i = 0; i < d.length; i++) {
+        if(budget - d[i] >= 0) {
+            budget -= d[i]
+            answer += 1;
+        }
+    }
+    return answer;
+}
+```
