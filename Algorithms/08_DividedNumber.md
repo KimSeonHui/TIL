@@ -165,3 +165,21 @@ ArrayList의 ```set(Int index, E elements)```
 - 배열의 정렬은 많이 해봤지만 ArrayList의 정렬은 처음이었다
 - 그래서 처음에는 이상하게 구현하기도 했었는데 이번 기회에 set() 뿐만 아니라 add(), get()에 대해서도 더 알아가는시간이었다
 - [ArrayList Document](https://docs.oracle.com/javase/7/docs/api/)
+
+
+---
+### 📍코드(javascript)
+```javascript
+function solution(arr, divisor) {
+    let answer = [];
+    arr.forEach((val) => {
+        val % divisor === 0 ? answer.push(val) : null
+    });
+    
+    answer.sort((a, b) => {
+        return a - b;
+    })
+    
+    return answer.length !== 0 ? answer : [-1];
+}
+```
