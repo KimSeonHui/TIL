@@ -1,7 +1,7 @@
 ## 📝가운데 글자 가져오기
 > [문제_가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
 
-### 📍첫 번째 풀이
+### 📍첫 번째 풀이(java)
 **홀수 짝수 확인**
 - 홀수, 짝수에 따라 가져오는 글자 수가 달라지기 때문에 확인 후
 - String에서 원하는 문자를 Char[]로 저장
@@ -31,7 +31,7 @@ class Solution {
 - Index는 0부터 시작, 범위 : 0 ~ length() - 1까지
 
 ---
-### 📍두 번째 풀이
+### 📍두 번째 풀이(java)
 ```substring(int beginIndex, int endIndex)``` 사용
 ```java
 class Solution {
@@ -62,6 +62,15 @@ class Solution {
 - beginIndex부터 끝까지 return
    - beginIndex - 시작하는 Index, 포함 o
 - ex) "unhappy".substring(2) returns "happy"
+
+---
+### 📍 코드(javascript)
+```javascript
+function solution(s) {
+    return (s.length % 2 === 0 ? s[s.length/2 - 1] + s[s.length/2] : s[Math.floor(s.length / 2)]);
+}
+```
+
 
 ---
 ## 📝문자열 다루기 기본
