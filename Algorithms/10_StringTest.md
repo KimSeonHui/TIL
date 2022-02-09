@@ -67,7 +67,7 @@ class Solution {
 ## 📝문자열 다루기 기본
 >[문제_문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
 
-### 📍첫 번째 풀이
+### 📍첫 번째 풀이(java)
 **비교 데이터(check) 생성해서 비교**
 - 주어진 문자열 s와 check를 비교해서 알파벳 포함 유무 확인
 
@@ -99,7 +99,7 @@ class Solution {
 }
 ```
 
-### 📍두 번째 풀이
+### 📍두 번째 풀이(java)
 
 **char 변수 값 비교**
 - char 변수는 내부적으로 유니코드로 저장되기 때문에 정수값으로 저장됨
@@ -129,4 +129,19 @@ class Solution {
 - ```parseInt(String s)``` : Integer
 - ```matches(String regex)``` : String
 
+
+---
+### 📍 코드(javascript)
+**정규표현식 풀이**
+
+```javascript
+function solution(s) {
+    let regExp = /[^0-9]/g;
+    return !regExp.test(s) && (s.length === 4 || s.length === 6);
+}
+```
+
+### 더 공부할 것
+정규 표현식... 계속 봐도.. 어렵다..
+표현식에 길이까지 확인하는걸 넣을 수 있을 것 같은데.. 조금 더 공부해봐야겠다..
 
