@@ -12,7 +12,7 @@
 - Index로 할 때 짝수는 "수" , 홀수는 "박"이기 때문에 for문을 돌면서 Index에 맞춰 String에 추가
 
 ---
-### 📍첫 번째 코드
+### 📍첫 번째 코드(java)
 ```java
 class Solution {
     public String solution(int n) {
@@ -33,7 +33,7 @@ class Solution {
 }
 ```
 ---
-### 📍두 번째 코드
+### 📍두 번째 코드(java)
 ``` java
 class Solution {
     public String solution(int n) {
@@ -52,3 +52,16 @@ class Solution {
 - 첫 번째, 두 번째 코드 둘 다 알고리즘은 동일
 - 그래서 문제를 푸는데 시간차이는 크게 없지만 두 번째 코드가 조금 더 빠름
 - 시간은 처리 횟수와도 관계가 있기 때문에 answer에 추가하기 까지 처리해야하는 문장수가 많은 첫 번째 코드보다 한줄로 answer에 추가할 수 있는 두 번째 코드가 조금 더 빠른듯함.
+
+
+---
+### 📍 코드(javascript)
+```javascript
+function solution(n) {
+    var answer = '';
+    for(let i = 0; i < n; i++) {
+       answer += i % 2 === 0 ? '수' : '박'
+    }
+    return answer;
+}
+```
