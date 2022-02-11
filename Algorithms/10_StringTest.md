@@ -154,3 +154,23 @@ function solution(s) {
 정규 표현식... 계속 봐도.. 어렵다..
 표현식에 길이까지 확인하는걸 넣을 수 있을 것 같은데.. 조금 더 공부해봐야겠다..
 
+
+---
+## 📝 핸드폰 번호 가리기
+[문제_핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
+
+---
+
+### 📍 코드(javascript)
+- `repeat()` 통해 `*` 반복
+- `phone_number`의 뒤에서 4글자를 붙어줌
+
+```javascript
+function solution(phone_number) {
+    var answer = '';
+    let p = phone_number;
+    answer = '*'.repeat(p.length - 4) + p.slice(p.length -4);
+    return answer;
+}
+```
+
