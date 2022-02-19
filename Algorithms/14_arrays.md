@@ -44,36 +44,3 @@ function solution(arr) {
     return answer;
 }
 ```
-
----
-## 📝 자연수 뒤집어 배열로 만들기
-[문제_자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)
-
----
-### 코드(javascript)
-**문자열 풀이**
-
-```javascript
-function solution(n) {
-    let answer = [];
-    let string = String(n);
-
-    for(let i = string.length-1; i >= 0; i--) {
-        answer.push(Number(string[i]));    
-    }
-    
-    return answer;
-}
-```
-
-**숫자 풀이**
-```javascript
-function solution(n) {
-    let arr = [];
-    do {
-        arr.push(n % 10);
-        n = Math.floor(n / 10);
-    } while(n > 0);
-    return arr;
-}
-```
