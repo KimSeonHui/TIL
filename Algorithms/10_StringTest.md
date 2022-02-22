@@ -280,3 +280,45 @@ function solution(s, n) {
     return answer;
 }
 ```
+
+-----
+## 📝 문자열 내림차순으로 배치하기
+[문제_문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
+
+
+
+### 📍 코드(javascript)
+
+**첫번째 풀이**
+```javascript
+function solution(s) {
+    var answer = '';
+    let str = s.split('');
+    
+    answer = str.sort((a, b) => {
+        if(a < b) 
+            return 1;
+        if(a > b)
+            return -1;
+        
+        return 0;
+    })
+    
+    
+    return answer.join('');
+}
+```
+
+<br />
+
+**두번째 풀이**
+```javascript
+function solution(s) {  
+    return s.split('')
+            .sort()
+            .reverse()
+            .join('')
+}
+```
+
+
