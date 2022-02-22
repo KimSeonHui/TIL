@@ -174,3 +174,65 @@ function solution(phone_number) {
 }
 ```
 
+----
+## 📝 이상한 문자 만들기
+[문제_이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930#)
+
+----
+
+### 📍 코드(javascript)
+
+**while()사용**
+- 모든 문자를 하나씩 분리: `split('')`
+- `모든 문자를 순회하는 인덱스(j)`, `각 단어의 글자의 짝/홀 판단하는 인덱스(i)`로 설정
+- 글자의 인덱스가 짝/홀인지에 따라 대문자/소문자로 변환
+- 현재값이 공백이면 단어가 바뀌었기 때문에 인덱스를 `0`으로 
+
+```javascript
+function solution(s) {
+    let answer = '';
+    let words = s.split('');
+    let i = 0, j = 0;
+    
+    while(j < words.length) {
+        answer += (i % 2 === 0) ? words[j].toUpperCase() : words[j].toLowerCase();
+        i++;
+        
+        if(words[j] === ' ')
+            i = 0;
+        
+        j++;
+    }
+    
+    return answer;   
+}
+
+```
+<br />
+
+
+**reduce()사용**
+- 모든 문자를 하나씩 분리: `split('')`
+- 글자의 인덱스(i)가 짝/홀인지에 따라 대문자/소문자로 변환
+- 현재값이 공백이면 단어가 바뀌었기 때문에 인덱스를 `0`으로 
+
+```javascript
+function solution(s) {
+    let answer = '';
+    let words = s.split('');
+    
+    let i = 0;
+    answer = words.reduce((acc, cur) => {
+        acc += (i % 2 === 0) ? cur.toUpperCase() : cur.toLowerCase();
+        i++;
+        
+        if(cur === ' ') 
+            i = 0;
+        
+        return acc;
+    }, '');
+    
+    return answer;
+}
+
+```
