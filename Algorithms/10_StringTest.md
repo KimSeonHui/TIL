@@ -236,3 +236,47 @@ function solution(s) {
 }
 
 ```
+
+----
+## 📝 시저 암호
+[문제_시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+
+----
+
+<br/>
+
+### 📍 코드(javascript)
+
+`(i + n > 25 ) ? (i + n) - sample.length : i+n`
+- 문자열의 인덱스(i) + 이동할 거리(n)을 더했을 때 `sample`의 길이를 벗어나는 경우가 생기기 때문에 이를 처리하는 로직
+
+<br/>
+
+```javascript
+function solution(s, n) {
+    var answer = '';
+    let sample = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+ //let sample = 'abcdefghijklmnopqrstuvwxyz'.split('');  //배열로 푸는 것이 빠름
+
+    let str = s.split('');
+    let i = 0;
+    
+    str.forEach((val) => {
+        if(val === ' '){
+            answer += val;   
+        }
+        else {
+            i = sample.indexOf(val.toLowerCase());
+            i = (i + n > 25 ) ? (i + n) - sample.length : i+n;
+            
+            if(val === val.toUpperCase()) {
+                answer += sample[i].toUpperCase();
+            }
+            else {
+                answer += sample[i];
+            }
+        }
+    })
+    return answer;
+}
+```
