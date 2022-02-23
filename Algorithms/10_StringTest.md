@@ -285,7 +285,7 @@ function solution(s, n) {
 ## 📝 문자열 내림차순으로 배치하기
 [문제_문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
 
-
+#
 
 ### 📍 코드(javascript)
 
@@ -321,4 +321,64 @@ function solution(s) {
 }
 ```
 
+-----
+## 📝 문자열 내 p와 y의 개수
+
+[문제_문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
+
+#
+
+### 📍 코드(javascript)
+
+**for문 사용**
+- 문자열 `s`를 전부 소문자로 변환 : `toLowerCase()`
+    - 대소문자 구분하지 않기 위해
+
+- 문자열 `s`를 전부 `for문`으로 돌면서 p, y의 갯수 확인
+
+
+```javascript
+function solution(s){
+    let answer = true;
+    let pCount = 0;
+    let yCount = 0;
+    s = s.toLowerCase();
+
+    for(let i = 0; i < s.length; i++) {
+        if(s[i] === 'p') {
+            pCount++;
+        }
+        else if(s[i] === 'y') {
+            yCount++;
+        }
+    }
+
+
+    return answer = (pCount === yCount) ? true : false;
+}
+```
+
+
+<br />
+
+**정규식 사용**     
+`s.match(/p/gi)`
+- match(regExp) : 문자열에서 정규식에 해당하는 항목들을 배열로 반환, 없으면 null
+-  g : 해당하는 모든 모든 문자 검색
+-  i : 대소문자 구분 x
+
+```javascript
+function solution(s){
+    let allP = s.match(/p/gi);  
+    let allY = s.match(/y/gi);
+    
+    if( allP === null && allY === null) {  // p, y 둘다 문자열에 없을 때
+        return true;
+    }
+    else if(allP === null || allY === null){ // p, y 둘 중 하나만 있을 때
+        return false;
+    }
+    return (allP.length === allY.length) ? true : false;    // p,y 둘다 있을 때
+}
+```
 
