@@ -21,7 +21,7 @@
 - [가운데 글자 가져오기](./Algorithms/13_middleword.md)
 - [배열 문제](./Algorithms/14_arrays.md)
 - [자릿수 문제](./Algorithms/15_digit.md)
-
+- [다트 게임](./Algorithms/17_dartGame.md)
 
 -----
 ## Android
