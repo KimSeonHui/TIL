@@ -22,6 +22,7 @@
 - [배열 문제](./Algorithms/14_arrays.md)
 - [자릿수 문제](./Algorithms/15_digit.md)
 - [다트 게임](./Algorithms/17_dartGame.md)
+- [최소직사각형](./Algorithms//19_minRect.md)
 
 -----
 ## Android
