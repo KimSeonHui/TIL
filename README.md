@@ -24,6 +24,10 @@
 - [다트 게임](./Algorithms/17_dartGame.md)
 - [최소직사각형](./Algorithms/19_minRect.md)
 - [나머지가 1이 되는 수 찾기](./Algorithms/20_remainder.md)
+- [Set 문제](./Algorithms/21_set.md)
+- [3진법 뒤집기](./Algorithms/22_reverseRadix.md)
+- [약수의 갯수와 덧셈](./Algorithms/23_SumAliquot.md)
+
 
 -----
 ## Android
