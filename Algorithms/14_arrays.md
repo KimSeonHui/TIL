@@ -126,3 +126,44 @@ function solution(N, stages) {
 ### 정리
 - `filter()`를 사용한 방법이 코드 수도 짧고 보기에 간결하지만 이중 for문 방법보다 시간이 오래 걸림
 - 가장 크게 차이나는 것은 약 40배까지 시간이 차이가 났음
+
+
+----
+## 📝 음양 더하기
+
+[문제_음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)
+
+
+### 📍 코드(javascript)
+
+**접근방법**
+- 부호가 `true` , `false`에 따라 숫자 더하기 빼기
+
+```javascript
+function solution(absolutes, signs) {
+    var answer = 0;
+    
+    signs.forEach((val, i) => {
+        if(val) {
+            answer += absolutes[i];
+        }
+        else {
+            answer -= absolutes[i];
+        }
+    })
+     
+    return answer;
+}
+```
+
+<br />
+
+**접근방법**
+- `reduce()` 사용
+- 부호가 `true`, `false`에 따라 `*1` , `* -1`로 부호 구분
+
+```javascript
+function solution(absolutes, signs) {
+   return absolutes.reduce((acc, cur, i) => acc += signs[i] ? cur * 1 : cur * -1, 0)
+}
+```
