@@ -16,7 +16,7 @@
 - 정렬된 배열에서 index가 [k-1]인 숫자를 answer배열에 넣기
 
 ---
-### 📍코드
+### 📍코드(java)
 ``` java
 class Solution {
     public int[] solution(int[] array, int[][] commands) {
@@ -49,6 +49,31 @@ class Solution {
     }
 }
 ```
+
+<br />
+
+----
+### 📍 코드(javascript)
+
+```javascript
+function solution(array, commands) {
+    var answer = [];
+    
+    commands.forEach((val) => {
+        const temp = array.slice(val[0] - 1, val[1]).sort((a,b) => a-b);
+        answer.push(temp[val[2] - 1])
+    })
+    return answer;
+}
+```
+<br />
+
+**더하기**
+- `sort((a,b) => a-b)` : `sort()`는 유니코드 문자표를 기준으로 정렬하기 때문에 숫자를 정렬할 때 숫자를 문자열로 변화해 정렬이 됨.     
+                         일반적으로 생각하는 숫자의 정렬 기준대로 정렬되지 않기 때문에 `compareFuction`을 넣어 정렬해줌
+                         
+     <br />
+     <br />
 ---
 ## 💡공부할 것
 ### 📍정확한 개념이 필요한 부분
@@ -89,3 +114,6 @@ int [][] x = new int[2][4];
 2차원 배열이름 = 배열 본체 자체가 아니라 배열 본체를 참조하는 변수      
 commands.length = commands가 참조하고 있는 배열 본체의 갯수를 구함
 - commands[0], commands[1], commands[2] 를 참조하기 때문에 commands.length = 3
+
+
+
