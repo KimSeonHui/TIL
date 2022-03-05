@@ -27,6 +27,9 @@
 - [Set 문제](./Algorithms/21_set.md)
 - [3진법 뒤집기](./Algorithms/22_reverseRadix.md)
 - [약수의 갯수와 덧셈](./Algorithms/23_SumAliquot.md)
+- [완주하지 못한 선수](./Algorithms/25_notFinish.md)
+- [소수 만들기](./Algorithms/26_makingPrime.md)
+- [숫자 문자열과 영단어](./Algorithms/27_numString.md)
 
 
 -----
