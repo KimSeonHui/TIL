@@ -167,3 +167,44 @@ function solution(absolutes, signs) {
    return absolutes.reduce((acc, cur, i) => acc += signs[i] ? cur * 1 : cur * -1, 0)
 }
 ```
+----
+## 📝 크레인 인형뽑기
+
+[문제_크레인 인형뽑기](https://programmers.co.kr/learn/courses/30/lessons/64061)
+
+### 📍 코드(javascript)
+
+**접근방법**
+- `moves`의 배열의 값을 통해 인형을 뽑을 `column` 위치를 정하게 됨
+- 이중 for문을 통해 `moves`의 배열의 값을 통해 정해진 `column` 위치에서 값이 0이 아닌 row를 찾음 - `인형을 뽑는 위치!`
+- 현재 뽑은 값과 이전에 마지막으로 뽑았던 값이 같으면(같은 인형이면) 마지막으로 뽑았던 값 삭제, 사라진 인형이 2개이기 때문에 숫자 카운트
+-  현재 뽑은 값과 이전에 마지막으로 뽑았던 값이 다르면(다른 인형이면) 현재 뽑은 값을 결과에 추가
+-  뽑은 인형은 사라지기 때문에 값을 0으로 바꿔줌
+-  한 번 인형을 뽑았으면 크레인을 움직여야 하기 때문에 같은 컬럼에서 계속 뽑지 않도록 `break`로 for문 탈출 
+
+```javascript
+function solution(board, moves) {
+    var answer = 0;
+    const result = [];
+    
+    for(let i = 0; i < moves.length; i++) {
+        for(let j = 0; j < board.length; j++){
+            if(board[j][moves[i] - 1] !== 0) { 
+                if(result[result.length - 1] === board[j][moves[i] - 1]) {
+                    result.pop();
+                    answer += 2;
+                }
+                else {
+                    result.push(board[j][moves[i] - 1]);
+                }
+                
+                board[j][moves[i] - 1] = 0;
+                break;
+            }
+        }
+    }
+
+    return answer;
+}
+
+```
