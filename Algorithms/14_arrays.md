@@ -208,3 +208,38 @@ function solution(board, moves) {
 }
 
 ```
+
+----
+## 📝 로또의 최고 순위와 최저 순위
+
+[문제_로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
+
+**접근방법**
+- 최고 순위와 최저 순위는 알아볼 수 없는 번호(`0`)의 수에 따라 나눠짐
+- `최저 순위` = 당첨 번호와 일치하는 번호의 수 + 0 // 알아볼 수 없는 번호(`0`)가 모두 틀릴 때
+- `최고 순위` = 당첨 번호와 일치하는 번호의 수 + `0`의 수 // 알아볼 수 없는 번호(`0`)가 모두 맞을 때
+
+```javascript
+function solution(lottos, win_nums) {
+    var answer = [];
+    let rank = [6,6,5,4,3,2,1];
+    let count = 0;
+    let zero = 0;
+    
+    lottos.forEach((val, i) => {
+        if(win_nums.includes(val)) {
+            count++;
+        }
+        if(val === 0) {
+            zero++;
+        }
+    })
+    
+    answer.push(rank[count + zero]);
+    answer.push(rank[count])
+
+    return answer;
+}
+
+```
+
