@@ -30,6 +30,9 @@
 - [완주하지 못한 선수](./Algorithms/25_notFinish.md)
 - [소수 만들기](./Algorithms/26_makingPrime.md)
 - [숫자 문자열과 영단어](./Algorithms/27_numString.md)
+- [신규 아이디 추천](./Algorithms/28_newId.md)
+- [신고 결과 받기](./Algorithms/29_report.md)
+- [124 나라의 숫자](./Algorithms/30_124Num.md)
 
 
 -----
