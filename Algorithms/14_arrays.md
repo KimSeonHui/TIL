@@ -243,3 +243,107 @@ function solution(lottos, win_nums) {
 
 ```
 
+----
+
+## 📝 키패드 누르기
+
+[문제_키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
+
+### 📍 코드(javascript)
+
+**접근방법**
+> 왼손으로 눌러야 되는 `1`, `4`, `7`, 오른손으로 눌러야 되는 `3`, `6`, `9`를 제외한 나머지 번호 `2`, `5`, `8`, `0`을 누를 때 왼손과 오른손의 거리를 계산하는게 중요 
+
+1. `1`, `4`, `7` 이면 왼손,  `3`, `6`, `9`이면 오른손으로 누르고 현재 손의 위치를 누른 번호로 옮기기
+2. `2`, `5`, `8`, `0`일 때 눌러야 되는 번호와 현재 오른손, 왼손의 위치를 계산하기
+    - `keypad`를 2차원 배열로 생성해 현재 손의 인덱스와 목적지 번호의 인덱스에서 row는 row끼리, column은 column끼리 계산해 거리를 측정 
+3. 왼손에서의 거리, 오른손에서의 거리에 따라 어느 손으로 누를 지 계산
+
+
+```javascript
+function solution(numbers, hand) {
+    var answer = '';
+    let leftPos = '*';
+    let rightPos = '#';
+
+    numbers.forEach((val) => {
+    
+        //1
+        if(val === 1 || val === 4 || val === 7) {
+            leftPos = val;
+            answer += 'L'
+        }
+        else if(val === 3 || val === 6 || val === 9) {
+            rightPos = val;
+            answer += 'R';
+        }
+        else {
+            //2
+            let leftDis = calDistance(leftPos, val)
+            let rightDis = calDistance(rightPos, val)
+            
+            // 3
+            if(calLeftRight(leftDis, rightDis, hand) === 'left') {
+                leftPos = val;
+                answer += 'L'
+            }
+            else {
+                rightPos = val;
+                answer += 'R';
+            }            
+        }
+    })
+    
+    return answer;
+}
+
+function calLeftRight(leftDis, rightDis, hand) {
+    if(leftDis < rightDis) {
+        return 'left'
+    }
+    else if(leftDis > rightDis) {
+        return 'right'
+    }
+    else {
+        if(hand === 'left') {
+            return 'left'
+        }
+        else {
+            return 'right'
+        }
+    }
+}
+
+function calDistance(curPos, des) {
+    const keypad = [[1,2,3], [4,5,6], [7,8,9], ['*', 0, '#']];
+    let curX = 0;
+    let curY = 0;
+    let desX = 0;
+    let desY = 0;
+    
+    for(let i = 0; i < keypad.length; i++) {
+        if(keypad[i].indexOf(curPos) !== -1) {
+            curX = i;
+            curY = keypad[i].indexOf(curPos);
+        }
+        if(keypad[i].indexOf(des) !== -1) {
+            desX = i;
+            desY = keypad[i].indexOf(des);
+        }
+    }
+    
+    return Math.abs(curX - desX) + Math.abs(curY - desY);
+    
+// 거리 계산하는 또 다른 로직    
+//     const keypad = {
+//         1 : [0,0], 2 : [0,1], 3 : [0,2],
+//         4 : [1,0], 5 : [1,1], 6 : [1,2],
+//         7 : [2,0], 8 : [2,1], 9 : [2,2],
+//         '*' : [3,0], 0 : [3,1], '#' : [3,2]
+//     }
+    
+//     return Math.abs(keypad[curPos][0] - keypad[des][0]) + Math.abs(keypad[curPos][1] - keypad[des][1])
+}
+```
+
+
