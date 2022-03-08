@@ -33,6 +33,7 @@
 - [신규 아이디 추천](./Algorithms/28_newId.md)
 - [신고 결과 받기](./Algorithms/29_report.md)
 - [124 나라의 숫자](./Algorithms/30_124Num.md)
+- [스택/큐 문제](./Algorithms/31_stack_queue.md)
 
 
 -----
