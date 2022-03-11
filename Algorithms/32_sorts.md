@@ -1,6 +1,6 @@
 ## 📝 가장 큰 수
 
-[가장 큰 수]
+[가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
 
 ### 📍 코드(javascript)
 
@@ -40,3 +40,33 @@ function compareFunc(a, b) {
     }
 }
 ```
+
+---
+## 📝 H-Index
+
+[문제_H-Index]
+
+### 📍 코드(javascript)
+
+**접근 방법**
+> `h`는 내림차순으로 정렬한 `citations`에서 인용 횟수가 배열에서의 해당 인용 횟수의 위치(1부터 시작 했을 때)보다 크거나 같은 것 중에서 마지막 위치
+
+```javascript
+function solution(citations) {
+    let answer = 0;
+    
+    citations.sort((a,b) => b-a);
+    for(let i = 0; i < citations.length; i++) {
+        if(citations[i] >= i+1) {
+            answer = i + 1;
+        }
+        else {
+            break;
+        }
+    }
+    
+    return answer;
+}
+```
+
+- [H-Index](https://en.wikipedia.org/wiki/H-index)
