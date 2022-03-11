@@ -87,3 +87,58 @@ function solution(priorities, location) {
 ### 참고
 - [Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 - [Array.prototype.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+
+----
+## 📝 다리를 지나는 트럭
+
+[문제_다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583?language=javascript#)
+
+### 📍 코드(javascript)
+
+**접근 방법**
+1. 건너편에 도착한 트럭과 모든 트럭의 수가 같을 때(모든 트럭이 다 건널때)까지 반복
+2. `현재 다리에 있는 트럭 무게 + 첫번째로 대기 중인 트럭 무게`가 감당 무게 이하이면 트럭을 다리에 올리기
+3. 감당 무게 초과이면 다리에 올라가 있던 트럭 밀기
+4. 트럭이 다리 끝에 도달하면(`driving[0] !== 0`) 현재 다리 무게에서 도착한 트럭 무게만큼을 빼고 `arrive[]`에 추가 
+
+```javascript
+function solution(bridge_length, weight, truck_weights) {
+    let sec = 0;
+    const arrive = [];
+    const driving = [];
+    const wating = truck_weights;
+    const len = truck_weights.length;
+    let curWeight = 0;
+    
+    // 1
+    while(arrive.length < len) {  
+    
+        //4
+        if(driving.length === bridge_length){ 
+            if(driving[0] === 0) {
+                driving.shift();
+            }
+            else {
+                curWeight -= driving[0];
+                arrive.push(driving.shift());
+            }
+        }
+        
+        // 2
+        if(curWeight + wating[0] <= weight) {
+            driving.push(wating[0]);
+            curWeight += wating.shift();
+        }
+        
+        // 3
+        else {
+            driving.push(0);
+        }        
+        
+        sec++;  
+    }
+    
+
+    return sec;
+}
+```
