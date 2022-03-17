@@ -9,13 +9,13 @@
 > 정해진 하나의 타입에 해당하는 데이터만을 저장할 수 있게 되어 있다.  ex) string 타입 배열 ['apple', 'banana'] (o) , ['apple', 1, true] (x)      
 > 
 > 반면, 자바스크립트는 `dynamically typed language`이기 때문에 하나의 자료구조에 여러가지 타입의 데이터를 섞어서 담을 수 있다.     
-> ex) string 타입 배열 ['apple', 'banana'] (o) , ['apple', 1, true] (o)
+> ex) string 타입 배열 ['apple', 'banana'] (o) , ['apple', 1, true] (o)      
 > 가능은 하지만 되도록이면 여러 데이터 타입을 섞어서 사용하지 않는 것이 좋다.
 
 <br />
 
 ## 자료구조 종류
-- 배열(Array) :  [`Java`]()  [`Javscript`]()
+- 배열(Array) :  [`Java`](Java/Array.md)  [`Javscript`](Javascript/Array.md)
 - 연결 리스트(Linked List)
 - 큐(Queue)
 - 스택(Stack)
