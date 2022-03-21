@@ -22,12 +22,17 @@
 
 
 ## 구현
+
+### 노드
 ```javascript
 function Node(data) {
     this.data = (data === undefined) ? 0 : data;
     this.next =  null;
 }
+```
 
+### linked list
+```javascript
 function LinkedList() {
     this.length = 0;
     this.head = new Node('head');
@@ -37,8 +42,16 @@ function LinkedList() {
     this.indexOf = indexOf;
     this.remove = remove;
     this.removeAt = removeAt;
+    this.isEmpty = isEmpty;
+    this.toString = toString;
 }
+```
 
+### 데이터 추가
+`append(data)` : 연결 리스트 맨 마지막에 `data`를 가진 노드 추가     
+`insert(index, data)` : `index` 위치에 `data`를 가진 노드 추가
+
+```javascript
 function append(data) {
     const node = new Node(data);
     let currentNode = this.head;
@@ -49,21 +62,6 @@ function append(data) {
 
     currentNode.next = node;
     this.length++;
-}
-
-function indexOf(data) {
-    let currentNode = this.head;
-    let index = -1;
-
-    while(currentNode !== null) {
-        if(currentNode.data === data) {
-            return index;
-        }
-        currentNode = currentNode.next;
-        index++;
-    }
-
-    return -1;
 }
 
 function insert(index, data) {
@@ -87,30 +85,16 @@ function insert(index, data) {
     return null;
     
 }
+```
 
-function size() {
-    return this.length;
-}
+### 데이터 삭제
+`remove(data)` : `data`값을 가진 노드를 찾아 삭제    
+`removeAt(index)` : `index`위치에 있는 노드를 찾아 삭제
 
+```javascript
 function remove(data) {
     let index = this.indexOf(data);
     return this.removeAt(index);
-    // let currentNode = this.head;
-    // let prevNode = null;
-
-    // while(currentNode !== null) {
-    //     prevNode = currentNode;
-    //     currentNode = currentNode.next;
-
-    //     if(currentNode.data === data) {
-    //         prevNode.next = currentNode.next;
-    //         currentNode.next = null;
-    //         this.length--;
-    //         return currentNode.data;
-    //     }
-    // }
-
-    // return null;
 }
 
 function removeAt(index) {
@@ -134,19 +118,81 @@ function removeAt(index) {
     }
     return null;
 }
+```
 
+### 인덱스 찾기
+`indexOf(data)` : `data`값을 가진 노드의 index를 리턴
+
+```javascript
+function indexOf(data) {
+    let currentNode = this.head;
+    let index = -1;
+
+    while(currentNode !== null) {
+        if(currentNode.data === data) {
+            return index;
+        }
+        currentNode = currentNode.next;
+        index++;
+    }
+
+    return -1;
+}
+```
+
+### 연결 리스트 크기
+`size()` : 연결 리스트의 길이를 리턴
+
+```javascript
+function size() {
+    return this.length;
+}
+```
+
+### 연결 리스트가 비었는지 아닌지 확인
+`isEmpty()` : 연결 리스트가 비어있으면 `true`, 아니면 `false`를 리턴
+
+```javascript
+function isEmpty() {
+    return (this.length === 0) ? true : false;
+}
+```
+
+### 연결 리스트의 전체 요소를 `String`타입으로 전환
+`toString()` : 연결 리스트의 요소를  `string`타입으로 리턴
+
+```javascript
+function toString() {
+    let currentNode = this.head;
+    const list = [];
+
+    while(currentNode !== null) {
+        if(currentNode.data !== 'head') {
+            list.push(currentNode.data);
+        }
+        currentNode = currentNode.next;
+    }
+
+    return list.join(' ');
+}
+```
+
+### 사용
+
+```javascript
 const list = new LinkedList();
-console.log('list', list)
 
 list.append(10);
 list.append(15);
 list.append(15);
 list.insert(0, 3);
-//list.removeAt(0);
-list.remove(10);
-console.log('list', list)
+console.log('list', list.toString())  // list 3 10 15 15
 
-console.log('size', list.size())
-console.log('indexOf', list.indexOf(15))
+//list.removeAt(0);  // list 10 15 15
+list.remove(15);  // list 3 10 15
+
+console.log('size', list.size())  // 3
+console.log('indexOf', list.indexOf(15)) // 2
+console.log('isEmpty', list.isEmpty()) // false
 
 ```
