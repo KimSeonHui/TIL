@@ -16,7 +16,8 @@
 
 ## 자료구조 종류
 - 배열(Array) :  [`Java`](Java/Array.md)  [`Javscript`](Javascript/Array.md)
-- 연결 리스트(Linked List)
+- 연결 리스트(Linked List) [`Javscript`](Javascript/Linkedlist.md)
+- 이중 연결 리스트(Doubly Linked List) [`Javscript`](Javascript/DoublyLinkedList.md)
 - 큐(Queue)
 - 스택(Stack)
 - 해시 테이블(Hash Table)
