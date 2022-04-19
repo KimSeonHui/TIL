@@ -34,6 +34,8 @@
 - [신고 결과 받기](./Algorithms/29_report.md)
 - [124 나라의 숫자](./Algorithms/30_124Num.md)
 - [스택/큐 문제](./Algorithms/31_stack_queue.md)
+- [영어 끝말잇기](./Algorithms/33_wordsChain.md)
+- [스킬 트리](./Algorithms/34_skillTree.md)
 
 -----
 ## Computer Science
