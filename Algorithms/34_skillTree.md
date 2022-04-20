@@ -28,3 +28,15 @@ function solution(skill, skill_trees) {
     return answer;
 }
 ```
+
+### 📍 다른 사람 풀이(javascript)
+```javascript
+function solution(skill, skill_trees) {
+    const regExp = new RegExp(`[^${skill}]`, 'g');
+    const trees = skill_trees.map((val) => val.replace(regExp, ''))
+
+    return  trees.filter((val) => {
+            return skill.indexOf(val) === 0 || val === "";  // 문자열에서 `indexOf()`는 인자로 들어간 문자열이 처음 등장하는 index를 반환
+    }).length;
+}
+```
