@@ -36,6 +36,7 @@
 - [스택/큐 문제](./Algorithms/31_stack_queue.md)
 - [영어 끝말잇기](./Algorithms/33_wordsChain.md)
 - [스킬 트리](./Algorithms/34_skillTree.md)
+- [점프와 순간이동](./Algorithms/35_jumpTeleport.md)
 
 -----
 ## Computer Science
