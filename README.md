@@ -37,6 +37,8 @@
 - [영어 끝말잇기](./Algorithms/33_wordsChain.md)
 - [스킬 트리](./Algorithms/34_skillTree.md)
 - [점프와 순간이동](./Algorithms/35_jumpTeleport.md)
+- [방문 길이](./Algorithms/36_visitedLength.md)
+- [문자열 압축](./Algorithms/37_compress.md)
 
 -----
 ## Computer Science
