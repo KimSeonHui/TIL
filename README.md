@@ -39,6 +39,8 @@
 - [점프와 순간이동](./Algorithms/35_jumpTeleport.md)
 - [방문 길이](./Algorithms/36_visitedLength.md)
 - [문자열 압축](./Algorithms/37_compress.md)
+- [오픈채팅방](./Algorithms/38_openChatting.md)
+- [괄호 변환](./Algorithms/39_parenthesisTransformation.md)
 
 -----
 ## Computer Science
