@@ -41,6 +41,7 @@
 - [문자열 압축](./Algorithms/37_compress.md)
 - [오픈채팅방](./Algorithms/38_openChatting.md)
 - [괄호 변환](./Algorithms/39_parenthesisTransformation.md)
+- [거리두기 확인](./Algorithms/40_keepDis.md)
 
 -----
 ## Computer Science
