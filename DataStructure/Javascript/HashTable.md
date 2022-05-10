@@ -49,3 +49,9 @@ index를 활용해 값을 저장하거나 검색함
 
 > 📌 **데이터 삭제시**      
 > 개방 주소법에서 데이터 삭제 시 삭제된 공간이 dummy space로 남기 때문에 해시 테이블 정리가 필요함
+
+
+----
+## 참고
+- [해시 테이블](https://mangkyu.tistory.com/102)
+- [hash table](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/hash-table)
