@@ -20,7 +20,7 @@
 - 이중 연결 리스트(Doubly Linked List) [`Javscript`](Javascript/DoublyLinkedList.md)
 - 큐(Queue)
 - 스택(Stack)
-- 해시 테이블(Hash Table)
+- 해시 테이블(Hash Table) [`Javscript`](Javascript/HashTable.md)
 - 힙 (Heap)
 - 그래프(Graph)
 - 트리(Tree)
