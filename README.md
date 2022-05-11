@@ -5,44 +5,11 @@
 -----
 
 ## Algorithms
-- [Quick Sort의 Partition 구현](./Algorithms/Partition.java)
-- [Find Kim_String 비교](./Algorithms/01_FindKim.md)
-- [Harsh Number](./Algorithms/02_HasharNum.md)
-- [mock Test_완전탐색](./Algorithms/03_mockTest.md)
-- [Kth Number_정렬](./Algorithms/04_KthNumber_Sort.md)
-- [Budget](./Algorithms/05_Budget.md)
-- [2016](./Algorithms/06_2016.md)
-- [같은 숫자는 싫어](./Algorithms/07_OnlyDifferentNumber.md)
-- [나누어 떨어지는 숫자 배열](./Algorithms/08_DividedNumber.md)
-- [두 정수 사이의 합](./Algorithms/09_SumAToB.md)
-- [문자열 문제](./Algorithms/10_StringTest.md)
-- [소수 찾기](./Algorithms/11_PrimeNumber.md)
-- [수박수박수](./Algorithms/12_subak.md)
-- [가운데 글자 가져오기](./Algorithms/13_middleword.md)
-- [배열 문제](./Algorithms/14_arrays.md)
-- [자릿수 문제](./Algorithms/15_digit.md)
-- [다트 게임](./Algorithms/17_dartGame.md)
-- [최소직사각형](./Algorithms/19_minRect.md)
-- [나머지가 1이 되는 수 찾기](./Algorithms/20_remainder.md)
-- [Set 문제](./Algorithms/21_set.md)
-- [3진법 뒤집기](./Algorithms/22_reverseRadix.md)
-- [약수의 갯수와 덧셈](./Algorithms/23_SumAliquot.md)
-- [완주하지 못한 선수](./Algorithms/25_notFinish.md)
-- [소수 만들기](./Algorithms/26_makingPrime.md)
-- [숫자 문자열과 영단어](./Algorithms/27_numString.md)
-- [신규 아이디 추천](./Algorithms/28_newId.md)
-- [신고 결과 받기](./Algorithms/29_report.md)
-- [124 나라의 숫자](./Algorithms/30_124Num.md)
-- [스택/큐 문제](./Algorithms/31_stack_queue.md)
-- [영어 끝말잇기](./Algorithms/33_wordsChain.md)
-- [스킬 트리](./Algorithms/34_skillTree.md)
-- [점프와 순간이동](./Algorithms/35_jumpTeleport.md)
-- [방문 길이](./Algorithms/36_visitedLength.md)
-- [문자열 압축](./Algorithms/37_compress.md)
-- [오픈채팅방](./Algorithms/38_openChatting.md)
-- [괄호 변환](./Algorithms/39_parenthesisTransformation.md)
-- [거리두기 확인](./Algorithms/40_keepDis.md)
+- [binary search](./Algorithms/binarySearch.md)
 
+#### 문제 풀이
+- [프로그래머스_문제 level 1](./Algorithms/programmers/level1)
+- [프로그래머스_문제 level 2](Algorithms/programmers/level2)
 -----
 ## Computer Science
 
