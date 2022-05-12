@@ -5,5 +5,5 @@
 <br />
 
 ## 알고리즘 분류
-- two pointers
-- [binary search](Algorithms/binarySearch.md)
+- [two pointers](towPointers.md)
+- [binary search](binarySearch.md)
