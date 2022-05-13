@@ -7,6 +7,7 @@
 ## Algorithms
 - [two pointers](./Algorithms/towPointers.md)
 - [binary search](./Algorithms/binarySearch.md)
+- [Dynamic Programming](./Algorithms/dynamicProgramming.md)
 
 #### 문제 풀이
 - [프로그래머스_문제 level 1](./Algorithms/programmers/level1)
