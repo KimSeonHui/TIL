@@ -9,3 +9,5 @@
 - [binary search](binarySearch.md)
 - [Dynamic Programming](dynamicProgramming.md)
 - [Sliding Window](slidingWindow.md)
+- [Depth-First-Search](DFS.md)
+- [Breadth-First-Search](BFS.md)
