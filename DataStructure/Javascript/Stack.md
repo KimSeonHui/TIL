@@ -49,3 +49,9 @@ stack.push(2);
 stack.push(3);
 stack.pop(); // 3
 ```
+
+<br />
+
+## 참고
+- [Javascript로 만나는 스택](https://helloworldjavascript.net/pages/282-data-structures.html)
+- [Stack](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/stack)
