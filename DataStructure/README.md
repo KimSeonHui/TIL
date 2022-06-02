@@ -23,4 +23,7 @@
 - 해시 테이블(Hash Table) [`Javscript`](Javascript/HashTable.md)
 - 힙 (Heap)
 - 그래프(Graph)
-- 트리(Tree)
+- 트리(Tree) [`Javscript`](Javascript/Tree.md)
+  - Binary Tree 이진 트리
+  - BST(Binary Search Tree) 이진 탐색 트리
+  - RBT(Red-Black-Tree) 
